@@ -14,7 +14,14 @@ if (JokeButton) {
 
 getJoke()
 
-async function getJoke() {
+export interface Joke {
+    id : string;
+    joke : string;
+    status : number;
+}
+
+
+async function getJoke(){
     const response = await fetch(url, {
         headers: {
             Accept: "application/json"
@@ -23,7 +30,7 @@ async function getJoke() {
     if (!response.ok) {
         throw new Error(`Could not find joke: ${response.status}`);
     }
-    const jokeData = await response.json();
+    const jokeData : Joke = await response.json();
     if(Display){
         Display.innerText = jokeData.joke;
     }
