@@ -1,7 +1,16 @@
 [
   {
+    "id" : 0,
+    "title": "Waitress",
     "music" : "Sara Bareilles",
     "lyrics" : "Sara Bareilles",
     "premiere" : "August 19 2015"
+  },
+  {
+    "id" : 1,
+    "title" : "Legally Blonde - The Musical",
+    "music" : "Nell Benjamin and Laurence O'Keefe",
+    "lyrics" : "Nell Benjamin and Laurence O'Keefe",
+    "premiere": "January 23, 2007"
   }
 ]
